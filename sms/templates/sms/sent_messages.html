@@ -1,0 +1,13 @@
+<!# show the required posts>
+
+<div><h1>Sent Messages</h1></div>
+
+{% for msg in messages %}
+	<div>
+ 		
+		<h3>Title: {{msg.title}}</h3>
+		</br>
+		<p>Text: {{msg.text}}</p>
+		</br></br>
+	</div>
+{% endfor %}

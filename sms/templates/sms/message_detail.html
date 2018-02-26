@@ -1,0 +1,26 @@
+<HTML>
+<! sent message details>
+<h1> Message Details </h1>
+
+
+ {% for res in response %} 
+	<div>
+<h2>Hurrah</h2>
+
+ 		<p>To: {{response.to}}</p></br>
+ 		<p>From: {{response.from}}</p></br>
+ 		<p>Title: {{response.keyword}}</p></br>
+ 		<p>Text: {{response.text}}</p></br>
+	
+	<p>message-timestamp: {{response.timestamp}}</p></br>
+ 		<p>remainingBalance: {{response.remainingBalance}}</p></br>
+ 		<p>message-count: {{response.count}}</p></br>
+ 		<p>Price: {{response.messagePrice}}</p></br>
+		<p>Status: {{response.status}}</p></br>
+ 		
+
+	</div>
+{% endfor %}
+
+</HTML>
+
