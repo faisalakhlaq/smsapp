@@ -120,9 +120,9 @@ USE_L10N = True
 USE_TZ = True
 
 # Nexmo setting
-NEXMO_API_KEY = '283b2c1d'
-NEXMO_API_SECRET = 'c497fc6521ee6efd'
-NEXMO_DEFAULT_FROM = '4571977799'
+NEXMO_API_KEY = os.env('NEXMO_API_KEY')
+NEXMO_API_SECRET = os.env('NEXMO_API_SECRET')
+NEXMO_DEFAULT_FROM = os.env('NEXMO_DEFAULT_FROM')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
